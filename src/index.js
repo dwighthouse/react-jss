@@ -61,7 +61,7 @@ function decorate(DecoratedComponent, rules, options = {}) {
 
     render() {
       return (
-        <DecoratedComponent {...this.props} sheet={this.sheet} />
+        <DecoratedComponent ref="wrapped" {...this.props} sheet={this.sheet} />
       );
     }
   };
